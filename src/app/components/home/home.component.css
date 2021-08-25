@@ -70,21 +70,25 @@
     opacity: 0;
     transition: .5s ease;
     background-color: #ddbea9;
-  }
-  
-  .project-card-right:hover .overlay {
-    opacity: 1;
-  }
+}
 
-  .project-card-left:hover .overlay {
+.project-card-right:hover .overlay {
     opacity: 1;
-  }
-  
-  .text {
+}
+
+.project-card-left:hover .overlay {
+    opacity: 1;
+}
+
+.text {
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-  }
+}
+
+.future-row{
+    margin: -15vh 15vw;
+}

@@ -36,6 +36,18 @@ body{
     background-color: #6b705c;
 }
 
+.background-medium-green{
+    background-color: #a5a58d;
+}
+
+.background-muted-green{
+    background-color: #b7b7a4;
+}
+
+.font-size-75{
+    font-size: .75rem;
+}
+
 .font-size-1{
     font-size: 1rem;
 }
