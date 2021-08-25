@@ -93,6 +93,11 @@
     transform: translate(-50%, -50%);
 }
 
+a .text{
+    color: black;
+    cursor: pointer;
+}
+
 .future-row{
     margin: -15vh 15vw;
 }
@@ -112,6 +117,7 @@
     margin: auto 0;
 }
 
+
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {}
 
@@ -121,7 +127,7 @@
         width:fit-content;
         background-color: #ddbea9;
         padding: 3%;
-        margin: 2% auto 0 auto;
+        margin: 2% auto;
         text-align: center;
         position: relative;
     }
@@ -130,9 +136,23 @@
         width:fit-content;
         background-color: #ddbea9;
         padding: 3%;
-        margin: 2% auto 0 auto;
+        margin: 2% auto;
         text-align: center;
         position: relative;
+    }
+
+    .work-in-progress{
+        position: absolute;
+        top: 40%;
+        left: -25%;
+        width: 150%;
+        font-size: 3rem;
+        color: black;
+        transform: rotate(45deg);
+    }
+
+    .goals{
+        padding: 0 2%;
     }
 }
 
