@@ -59,6 +59,10 @@
     transform: rotate(45deg);
 }
 
+#contact{
+    margin: 0 15%;
+}
+
 .overlay {
     position: absolute;
     top: 0;
@@ -91,4 +95,19 @@
 
 .future-row{
     margin: -15vh 15vw;
+}
+
+.resume-button{
+    background-color:#cb997e;
+    color: white;
+}
+
+.shanda-border{
+    width:fit-content;
+    border: 2px solid #ddbea9;
+    padding: 3%;
+}
+
+.contact-info{
+    margin: auto 0;
 }
