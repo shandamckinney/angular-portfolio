@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background-color: #FFF8F3;
+}
+
+.title-font{
+    font-family: 'Permanent Marker', cursive;
+}
+
+.body-font-300{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 300;
+}
+
+.body-font-400{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+}
+
+.body-font-500{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+}
+
+.body-font-600{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 600;
+}
+
+.body-font-700{
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 700;
+}
+
+.background-forest-green{
+    background-color: #6b705c;
+}
+
+.font-size-1{
+    font-size: 1rem;
+}
+
+.font-size-15{
+    font-size: 1.5rem;
+}
+
+.font-size-2{
+    font-size: 2rem;
+}
+
+.font-size-3{
+    font-size: 3rem;
+}
+/* dark brown #cb997e
+sand #ddbea9
+light tan #ffe8d6
+muted green #b7b7a4
+medium green #b7b7a4
+forest green #6b705c */

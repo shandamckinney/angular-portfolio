@@ -1,0 +1,90 @@
+.hero{
+    background-image: url("Portfolio_Background.svg");
+    margin-top: -1rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+.title{
+    height: 100vh;
+}
+
+.title-text{
+    padding-top: 40vh;
+}
+
+.about{
+    letter-spacing: 2px;
+    line-height: 250%;
+}
+
+.project-card-left{
+    width:fit-content;
+    background-color: #ddbea9;
+    padding: 3%;
+    margin: 0 0 0 auto;
+    text-align: center;
+    position: relative;
+}
+
+.project-card-right{
+    width:fit-content;
+    background-color: #ddbea9;
+    padding: 3%;
+    margin: 0 auto 0 0;
+    text-align: center;
+    position: relative;
+}
+
+.project-img{
+    width: 20.5rem;
+    height: 20.5rem;
+    object-fit: cover;
+}
+
+.project-img-progress{
+    width: 20.5rem;
+    height: 20.5rem;
+    object-fit: cover;
+    opacity: .25
+}
+
+.work-in-progress{
+    position: absolute;
+    top: 42%;
+    left: -13%;
+    width: 125%;
+    font-size: 3rem;
+    color: black;
+    transform: rotate(45deg);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #ddbea9;
+  }
+  
+  .project-card-right:hover .overlay {
+    opacity: 1;
+  }
+
+  .project-card-left:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
