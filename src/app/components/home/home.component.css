@@ -1,5 +1,6 @@
 .hero{
-    background-image: url("Portfolio_Background.svg");
+    background-image: url("./shanda.jpg");
+    background-size: contain;
     margin-top: -1rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,6 +12,7 @@
 
 .title-text{
     padding-top: 40vh;
+    letter-spacing: 1.5px;
 }
 
 .about{
