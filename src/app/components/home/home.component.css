@@ -1,168 +1,110 @@
-.hero{
-    background-image: url("./shanda.jpg");
-    background-size: contain;
-    margin-top: -1rem;
-    background-repeat: no-repeat;
-    background-size: cover;
-} 
-
-.title{
-    height: 100vh;
+h1,
+h3 {
+  font-family: "Arvo", serif;
 }
 
-.title-text{
-    padding-top: 40vh;
-    letter-spacing: 1.5px;
+p {
+  font-family: "Roboto", sans-serif;
 }
 
-.about{
-    letter-spacing: 2px;
-    line-height: 250%;
+.sdk-font-size-0 {
+  font-size: 0.75rem;
 }
 
-.project-card-left{
-    width:fit-content;
-    background-color: #ddbea9;
-    padding: 3%;
-    margin: 0 0 0 auto;
-    text-align: center;
-    position: relative;
+.sdk-font-size-1 {
+  font-size: 1rem;
 }
 
-.project-card-right{
-    width:fit-content;
-    background-color: #ddbea9;
-    padding: 3%;
-    margin: 0 auto 0 0;
-    text-align: center;
-    position: relative;
+.sdk-font-size-2 {
+  font-size: 1.25rem;
 }
 
-.project-img{
-    width: 20.5rem;
-    height: 20.5rem;
-    object-fit: cover;
+.sdk-font-size-3 {
+  font-size: 1.5rem;
 }
 
-.project-img-progress{
-    width: 20.5rem;
-    height: 20.5rem;
-    object-fit: cover;
-    opacity: .25
+.sdk-font-size-4 {
+  font-size: 2rem;
 }
 
-.work-in-progress{
-    position: absolute;
-    top: 42%;
-    left: -13%;
-    width: 125%;
-    font-size: 3rem;
-    color: black;
-    transform: rotate(45deg);
+.nav-link {
+  color: black;
+  text-decoration: none;
 }
 
-#contact{
-    margin: 0 15%;
+.footer-link {
+  color: white;
+  text-decoration: none;
 }
 
-.overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #ddbea9;
+.hero {
+  height: 100%;
 }
 
-.project-card-right:hover .overlay {
-    opacity: 1;
+.dev-icons {
+  flex-wrap: wrap;
+  margin: 6% auto;
+  list-style: none;
 }
 
-.project-card-left:hover .overlay {
-    opacity: 1;
+.icon {
+  justify-content: center;
+  flex-basis: 25%;
+  font-size: 4rem;
 }
 
-.text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+.icon p {
+  margin-top: -1rem;
 }
 
-a .text{
-    color: black;
-    cursor: pointer;
+.about-title {
+  position: relative;
 }
 
-.future-row{
-    margin: -15vh 15vw;
+.about-title::before {
+  background-color: rgba(52, 78, 65, 0.2);
+  content: "";
+  position: absolute;
+  width: calc(100% + -7rem);
+  height: 60%;
+  left: -2px;
+  bottom: -6px;
+  z-index: -1;
+  transform: rotate(-2deg);
 }
 
-.resume-button{
-    background-color:#cb997e;
-    color: white;
+.skills-title {
+  position: relative;
 }
 
-.shanda-border{
-    width:fit-content;
-    border: 2px solid #ddbea9;
-    padding: 3%;
+.skills-title::before {
+  background-color: rgba(52, 78, 65, 0.2);
+  content: "";
+  position: absolute;
+  width: calc(50% + -6rem);
+  height: 60%;
+  left: -2px;
+  bottom: -6px;
+  z-index: -1;
+  transform: rotate(-2deg);
 }
 
-.contact-info{
-    margin: auto 0;
+.work-title {
+  position: relative;
 }
 
-
-/* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {}
-
-/* // Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-    .project-card-left{
-        width:fit-content;
-        background-color: #ddbea9;
-        padding: 3%;
-        margin: 2% auto;
-        text-align: center;
-        position: relative;
-    }
-    
-    .project-card-right{
-        width:fit-content;
-        background-color: #ddbea9;
-        padding: 3%;
-        margin: 2% auto;
-        text-align: center;
-        position: relative;
-    }
-
-    .work-in-progress{
-        position: absolute;
-        top: 40%;
-        left: -25%;
-        width: 150%;
-        font-size: 3rem;
-        color: black;
-        transform: rotate(45deg);
-    }
-
-    .goals{
-        padding: 0 2%;
-    }
+.work-title::before {
+  background-color: rgba(52, 78, 65, 0.2);
+  content: "";
+  position: absolute;
+  width: calc(50% + 5rem);
+  height: 60%;
+  left: -2px;
+  bottom: -6px;
+  z-index: -1;
+  transform: rotate(-2deg);
 }
 
-/* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
-
-/* // X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
-
-/* // XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {}
+.active {
+  color: #84a98c;
+}

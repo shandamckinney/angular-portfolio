@@ -1,110 +1,127 @@
-<div class="hero">
-    <div class="row">
-        
-        <div class="col-7">
-            <div class="title text-white">
-                <h1 [@enter]="{ value: '', params: { duration: 1000, delay: 200, translate: '30px' } }" class="text-center title-text pb-5 pl-5 body-font-700">Hey y'all - my name is <span class="title-font">Shanda</span>.</h1>
-                <p [@enter]="{ value: '', params: { duration: 500, delay: 1000, translate: '30px' } }" class="text-center body-font-700 pt-5" style="letter-spacing: 2px;">And I am a Software Engineer</p>
-            </div>
-        </div>
-        <div class="col-5">
-            
+<div style="margin-right: 1.5rem; padding-top: 1.5rem" class="d-flex justify-content-between align-items-center">
+    <div>
+        <h1 style="margin-bottom: 0rem; padding-left: 1.5rem">S.P.</h1>
+    </div>
+    <div class="d-flex align-items-center justify-content-end">
+        <a class="mx-1 nav-link" href="/">Home</a>
+        <a class="mx-1 nav-link" href="#work">Work</a>
+        <a class="mx-1 nav-link" href="#about">About</a>
+        <a class="mx-1 nav-link" href="#contact">Contact</a>
+    </div>
+</div>
+<div class="hero d-flex mt-5">
+    <img [@slideRight] style="height: 30rem; width: 45rem; object-fit: cover;" src="./../../../assets/images/Shanda.jpg" alt="An outline of the Houston Skyline">
+    <div [@slideLeft] class="d-flex align-items-center">
+        <div class="text-center">
+            <h1 style="font-size: 5rem; margin-left: -4rem">shanda pinell</h1>
+            <p style="font-size: 1.25rem">FRONT END SOFTWARE ENGINEER</p>
         </div>
     </div>
 </div>
-<section>
-    <div id="about" class="background-forest-green">
-        <p class="text-center text-white py-5 body-font-300 w-50 text-uppercase mx-auto font-size-1 about">I come from a non-traditonal path into tech, but got here as fast as I could. I currently work on interal projects within PricewaterhouseCoopers as their front-end/accessiblity specialist. </p>
+<div class="d-flex align-items-center justify-content-center" style="margin-top: 5rem; margin-bottom: 5rem; ">
+    <div class="text-center">
+        <h1>it's pronounced shanda - like panda</h1>
+        <p class="sdk-font-size-1">WANNA KNOW MORE?</p>
     </div>
-</section>
-<section class="mb-5">
-    <div id="projects">
-        <h3 class="text-center py-5 body-font-500">Some projects I've been working on:</h3>
-        <div class="row mb-md-5">
-            <div class="col-12 col-md-6">
-                <div class="project-card-left shadow-md-lg">
-                    <img class="project-img" src="../../../assets/images/etsy-clone-cropped.png" alt="Screenshot of the etsy clone website I built. On it features products for sale and what Esty recommends">
-                    <div class="overlay">
-                        <a href="https://distracted-galileo-487f83.netlify.app/" target="_blank">
-                            <div class="text text-center font-size-1 body-font-300">A clone of Etsy's homepage using purely HTML and CSS.</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="project-card-right shadow-md-lg">
-                    <img class="project-img" src="../../../assets/images/pinell-photography-cropped.png" alt="Screenshot of the Pinell Photography websites. Features a man and woman standing in a suit and dress on a sand dune in White Sands National Park.">
-                    <div class="overlay">
-                        <a href="http://www.pinellphotography.com" target="_blank">
-                            <div class="text text-center font-size-1 body-font-300">A photography portfolio website using Angular to provide a way to showcase phtographs and allow clients to reach out for services.</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-6">
-                <div class="project-card-left shadow-md-lg">
-                    <img class="project-img-progress" src="../../../assets/images/url-shorting-api-practice.png" alt="Screenshot of the etsy clone website I built. On it features products for sale and what Esty recommends">
-                    <p class="work-in-progress text-uppercase">Work in Progress!</p>
-                    <div class="overlay">
-                        <a href="https://wizardly-liskov-eb61ec.netlify.app/" target="_blank">
-                            <div class="text text-center text-white font-size-15 body-font-300">A url shorting website using an API. This was created with HTML/CSS/Bootstrap.</div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="project-card-right shadow-md-lg">
-                    <img class="project-img-progress" src="../../../assets/images/pinell-photography-cropped.png" alt="Screenshot of the Pinell Photography websites. Features a man and woman standing in a suit and dress on a sand dune in White Sands National Park.">
-                    <p class="work-in-progress text-uppercase">Work in Progress!</p>
-                    <!-- <div class="overlay">
-                        <div class="text text-center text-white font-size-15 body-font-300">Hello World</div>
-                    </div> -->
-                </div>
-            </div>
-        </div>
+</div>
+<div style="margin-right: 12rem; margin-left: 12rem; padding-top: 2.5rem; padding-bottom: 5rem">
+    <h1 class="w-50 skills-title">skills</h1>
+    <ul class="d-flex dev-icons text-center">
+        <li class="icon">
+            <span class="devicon-angularjs-plain" (mouseover)="addClass($event)" (mouseleave)="removeClass($event)" ></span>
+            <p class="sdk-font-size-1">angular</p>
+        </li>
+        <li class="icon">
+            <span class="devicon-bootstrap-plain" (mouseover)="addClass($event)" (mouseleave)="removeClass($event)"></span>
+            <p class="sdk-font-size-1">bootstrap</p>
+        </li>
+        <li class="icon">
+            <span class="devicon-csharp-plain" (mouseover)="addClass($event)" (mouseleave)="removeClass($event)"></span> 
+            <p class="sdk-font-size-1">c#</p>
+        </li>
+        <li class="icon">
+            <span class="devicon-css3-plain" (mouseover)="addClass($event)" (mouseleave)="removeClass($event)"></span>
+            <p class="sdk-font-size-1">css</p>
+        </li>
+        <li class="icon">
+            <span class="devicon-dotnetcore-plain" (mouseover)="addClass($event)" (mouseleave)="removeClass($event)"></span>
+            <p class="sdk-font-size-1">.netCore</p>
+        </li>
+        <li class="icon">
+            <span class="devicon-html5-plain" (mouseover)="addClass($event)" (mouseleave)="removeClass($event)"></span>
+            <p class="sdk-font-size-1">html</p>
+        </li>
+        <li class="icon">
+            <span class="devicon-javascript-plain" (mouseover)="addClass($event)" (mouseleave)="removeClass($event)"></span>
+            <p class="sdk-font-size-1">javascript</p>
+        </li>
+        <li class="icon">
+            <span class="devicon-jquery-plain" (mouseover)="addClass($event)" (mouseleave)="removeClass($event)"></span>
+            <p class="sdk-font-size-1">jquery</p>
+        </li>
+        <li class="icon">
+            <span class="devicon-microsoftsqlserver-plain" (mouseover)="addClass($event)" (mouseleave)="removeClass($event)"></span>
+            <p class="sdk-font-size-1">mssql</p>
+        </li>
+        <li class="icon">
+            <span class="devicon-typescript-plain" (mouseover)="addClass($event)" (mouseleave)="removeClass($event)"></span>
+            <p class="sdk-font-size-1">typescript</p>
+        </li>
+        <li class="icon">
+            <span class="devicon-vscode-plain" (mouseover)="addClass($event)" (mouseleave)="removeClass($event)"></span>
+            <p class="sdk-font-size-1">vscode</p>
+        </li>
+    </ul>
+</div>
+<div style="margin-left: 12rem; margin-right: 12rem" id="work">
+    <div class="w-50" style="padding-bottom: 4rem">
+        <h1 class="work-title">my recent work</h1>
     </div>
-</section>
-<section class="my-5">
-    <div id="future">
-        <div class="background-forest-green py-5 goals">
-            <h3 class="text-center text-white pb-3 body-font-500 font-size-2">What's next for me?</h3>
-            <p class="text-center text-white body-font-300 mb-1 about text-uppercase"><s>CSS Animations. Who doesn't love a good animation!</s></p>
-            <p class="text-center text-white body-font-300 mb-1 about text-uppercase">React! Gotta keep up with the times!</p>
-            <p class="text-center text-white body-font-300 mb-1 about text-uppercase">Next up is Node.js. Node makes a perfect match with React. </p>
+    <div class="row" [@slideUp]>
+        <div class="col-4">
+            <div style="background-color:#3a5a40; height: 18rem"></div>
         </div>
-    </div>
-</section>
-<section class="my-5">
-    <div id="contact">
-        <div class="">
-            <h3 class="text-center pb-3 body-font-500 font-size-2">Lets connect!</h3>
-            <div class="row contact-row">
-                <div class="col-12 col-md-4">
-                    <div class="text-center p-2 shanda-border">
-                        <img src="../../../assets/images/Shanda.jpg" class="w-100 shanda-img" alt="A image of Shanda, a brown haired girl with her hair in a bun, looking to the side while on a parking garage roof. She is wearing a jean jacket.">
-                    </div>
-                </div>
-                <div class="col-12 col-md-8 text-center contact-info">
-                   
-                        <div class="text-center">
-                            <p class="mb-0 body-font-500 text-uppercase font-size-75">mckinney.shanda@gmail.com</p>
-                            <p class="mb-0 body-font-500 text-uppercase font-size-75">(713) 269-4890</p>
-                        </div>
-                        <div class="d-flex align-items-center justify-content-center" style="height: 5rem">
-                            
-                            <a class="mx-3" href="https://www.linkedin.com/in/shanda-mckinney/" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                            </a>
-                            <a class="mx-3" href="https://github.com/shandamckinney" target="_blank">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            </a>
-                        </div>
-                        <a href="https://drive.google.com/file/d/1PYunrg1y4k9YR5ui8nyDId-NXxFF6VrB/view?usp=sharing" target="_blank"><button class="btn resume-button">Resume</button></a>
-                   
-                </div>
-            </div>
+        <div class="col-4">
+            <div style="background-color:#52796f; height: 10rem; margin-bottom: 2rem"></div>
+            <div style="background-color: #84a98c; height: 10rem"></div>
+        </div>
+        <div class="col-4">
+            <div style="background-color:#3a5a40; height: 18rem"></div>
         </div>
     </div>
-</section>
+    <div class="text-center mb-4 sdk-font-size-1" style="padding-top: 2rem">
+        <a class="text-uppercase" style="color: black; text-decoration: none; cursor: pointer;">view more work</a>
+    </div>
+</div>
+<div class="d-flex align-items-center justify-content-center" style="color: white;margin-top: 5rem; margin-bottom: 5rem; padding-bottom: 2.5rem; padding-top: 2.5rem;background-color: #344e41;">
+    <div class="text-center">
+        <h1>lets work together</h1>
+        <h3>get in touch</h3>
+    </div>
+</div>
+<div class="d-flex" style="margin-left: 12rem; margin-right: 12rem">
+    <div class="w-50">
+        <h3 class="about-title w-50">About Me</h3>
+        <p style="padding-top: 2rem">Hello! Thanks for taking a peek at my website! I am a front-end focused full-stack software engineer with 3 years of professional experience. Most recently, I've been working on an internal application for PricewaterhouseCoopers, PwC, that is used globally to save our users time by automating processes in their daily work.</p>
+        <p style="padding-top: 2rem">In my spare time, you can find me either at the local rock gym bouldering or out on a walk with my two dogs. I also am working on my woodworking skills by building our new dining room table. While consistant measuring is my biggest weakness, ask me to see pictures of my latest work of art!  </p>
+    </div>
+    <div class="w-50 d-flex justify-content-end">
+        <img style="border-radius: 5%;height: 25rem; width: 25rem; object-fit: cover;" src="./../../../assets/images/Shanda.jpg">
+    </div>
+</div>
+<div style="padding: 2.5rem 12rem; margin-top: 4rem; background-color: #344e41; color: white">
+    <div class="d-flex align-items-center justify-content-between">
+        <div>
+            shanda
+        </div>
+        <div class="d-flex align-items-center" style="color: white">
+            <a class="mx-1 footer-link" href="/">Home</a>
+            <a class="mx-1 footer-link" href="#work">Work</a>
+            <a class="mx-1 footer-link" href="#about">About</a>
+            <a class="mx-1 footer-link" href="#contact">Contact</a>
+        </div>
+        <div>
+            all socials
+        </div>
+    </div>
+</div>
