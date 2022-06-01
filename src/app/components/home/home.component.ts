@@ -36,10 +36,12 @@ export class HomeComponent implements OnInit {
   }
 
   addClass(event: any): void {
+    // adding active for hover class
     event.target.className += ' active';
   }
 
   removeClass(event: any): void {
+    // taking away active for hover class
     event.target.className = event.target.className.replace(' active', '');
   }
 
