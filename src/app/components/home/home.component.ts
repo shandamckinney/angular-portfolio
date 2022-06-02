@@ -1,4 +1,4 @@
-import { animate, style, transition, trigger } from '@angular/animations';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,15 +7,27 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css'],
   animations: [
     trigger('slideRight', [
-      transition(':enter', [
-        style({transform: 'translateX(-20%)', opacity: .5}),
+      transition('void => *', [
+        style({transform: 'translateX(-20%)'}),
         animate('1000ms ease-in', style({transform: 'translateX(0%)'}))
       ]),
+    ]),
+    trigger('fadeIn', [
+      state('void', style({
+        opacity: 0
+      })),
+      transition('void <=> *', animate(2000)),
     ]),
     trigger('slideLeft', [
       transition(':enter', [
         style({transform: 'translateX(20%)', opacity: .5}),
         animate('1000ms ease-in', style({transform: 'translateX(0%)', opacity: 100}))
+      ]),
+    ]),
+    trigger('slideLeftDelayed', [
+      transition(':enter', [
+        style({transform: 'translateX(20%)', opacity: .5}),
+        animate('1000ms ease-in', style({transform: 'translateX(0%)', opacity: 100}), )
       ]),
     ]),
     trigger('slideUp', [
@@ -43,6 +55,16 @@ export class HomeComponent implements OnInit {
   removeClass(event: any): void {
     // taking away active for hover class
     event.target.className = event.target.className.replace(' active', '');
+  }
+
+  addHoverClass(event: any): void {
+    // adding active for hover class
+    event.target.className += ' fade-in';
+  }
+
+  removeHoverClass(event: any): void {
+    // taking away active for hover class
+    event.target.className = event.target.className.replace(' fade-in', '');
   }
 
 }
